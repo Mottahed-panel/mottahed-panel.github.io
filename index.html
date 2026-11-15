@@ -3,113 +3,199 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>تابلو برق متحد</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101c2d">
+<title>تابلو برق متحد | مهندس یعقوبی‌زاده</title>
 <style>
 *{box-sizing:border-box}
 body{
- margin:0;background:#101923;color:white;
+ margin:0;
  font-family:Tahoma,Arial,sans-serif;
- text-align:center
+ background:#0b1422;
+ color:#f4f6fa;
+ line-height:1.9;
 }
-.container{max-width:520px;margin:auto;padding:22px}
+.container{width:min(940px,92%);margin:auto}
+header{text-align:center;padding:38px 15px 25px}
 .logo{
- width:100px;height:100px;border:2px solid #f5a623;
- border-radius:50%;display:flex;align-items:center;
- justify-content:center;margin:12px auto;
- font-size:48px;background:#263747
+ width:125px;height:125px;object-fit:contain;
+ background:#fff;border-radius:24px;padding:8px;
+ box-shadow:0 0 30px #f28b2630;
 }
-.brand{font-size:27px;font-weight:bold;margin:14px 0}
-.english{color:#f5a623;letter-spacing:3px;font-size:12px}
+.brand{font-size:30px;font-weight:bold;margin:12px 0 0}
+.brand span{color:#f59a35}
+.engineer{color:#c1ccda;font-size:15px}
 .hero{
- margin:25px 0;border-radius:16px;min-height:190px;
- display:flex;align-items:center;justify-content:center;
- background:linear-gradient(135deg,#263747,#101923);
- border:1px solid #40505d;font-size:76px
+ margin:15px auto 30px;
+ padding:30px 22px;
+ border:1px solid #29394d;
+ border-radius:24px;
+ background:linear-gradient(135deg,#17283e,#101b2b);
+ text-align:center;
 }
-.desc{line-height:2;color:#d6e0e8;font-size:14px}
-.slogan{
- margin:25px 0;padding:17px 8px;
- background:#1d2b38;border-radius:12px;
- display:flex;justify-content:center;gap:9px;flex-wrap:wrap
+.hero h1{font-size:25px;margin:0 0 12px}
+.hero h1 span{color:#f59a35}
+.hero p{color:#c4cfdd;margin:0 auto;max-width:650px}
+.panel-art{
+ margin:25px auto 0;
+ max-width:490px;
+ padding:18px;
+ border-radius:18px;
+ background:linear-gradient(145deg,#263b50,#111d2c);
+ border:1px solid #43566b;
 }
-.word{font-size:17px;color:white}
-.word b{color:#f5a623;font-size:22px}
-h3{margin-top:30px}
-.links{
- display:grid;grid-template-columns:1fr 1fr;gap:12px
+.cabinet{
+ margin:auto;width:210px;height:175px;
+ background:linear-gradient(90deg,#b9c4cc,#edf1f3,#aab6c0);
+ border:7px solid #788997;border-radius:8px;
+ display:flex;gap:9px;padding:12px;
+ box-shadow:0 12px 25px #0006;
 }
-.link{
- padding:15px 7px;border-radius:12px;
- color:white;text-decoration:none;font-size:14px;
- background:#263747;border:1px solid #40505d
+.rail{flex:1;background:#dce3e8;border:2px solid #788997;border-radius:3px;padding:7px 3px}
+.part{height:27px;margin:5px 0;background:#34495b;border-radius:3px;border-left:4px solid #f59a35}
+.part.small{height:17px;background:#536b7c}
+.panel-caption{font-size:13px;color:#dce5ed;margin-top:12px}
+.section-title{
+ text-align:center;font-size:20px;margin:32px 0 16px;
 }
-.icon{font-size:23px;display:block;margin-bottom:7px}
-.phone{background:#167a55}
-.whatsapp{background:#167a55}
-.telegram{background:#2676a8}
-.instagram{background:#a74775}
-.bale{background:#2676a8}
-.eitaa{background:#d77c22}
-.rubika{background:#6b58a5}
-footer{color:#9aabb9;font-size:12px;margin:30px 0 10px}
+.section-title span{color:#f59a35}
+.services{
+ display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
+}
+.service{
+ background:#142338;border:1px solid #293c53;
+ padding:15px;border-radius:14px;text-align:center;
+}
+.service b{color:#f6a34c}
+.contact{
+ margin:28px 0;padding:23px;
+ background:#142338;border:1px solid #293c53;
+ border-radius:20px;text-align:center;
+}
+.phone{
+ display:inline-block;color:#fff;text-decoration:none;
+ direction:ltr;font-size:22px;font-weight:bold;
+ margin:8px 0;
+}
+.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:15px}
+.action{
+ display:inline-block;text-decoration:none;color:white;
+ background:#263b52;padding:10px 17px;border-radius:12px;
+ border:1px solid #40556c;font-size:14px;
+}
+.action.primary{background:#e98727;border-color:#e98727;color:#101827;font-weight:bold}
+.socials{
+ display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+}
+.social{
+ text-decoration:none;color:white;background:#142338;
+ border:1px solid #293c53;border-radius:14px;
+ padding:13px 5px;text-align:center;
+}
+.social .symbol{
+ width:39px;height:39px;border-radius:50%;
+ display:grid;place-items:center;margin:0 auto 6px;
+ font-size:20px;font-weight:bold;color:white;
+}
+.whatsapp{background:#20bd68}
+.telegram{background:#269bd5}
+.instagram{background:linear-gradient(45deg,#f9a13b,#e1306c,#833ab4)}
+.bale{background:#168c55}
+.eitaa{background:#e87924}
+.rubika{background:linear-gradient(135deg,#e84c8a,#8053c7,#32a6d5)}
+.social small{display:block;color:#c4cfdd;font-size:12px}
+footer{text-align:center;color:#8798aa;font-size:12px;padding:28px 10px}
+@media(max-width:500px){
+ .brand{font-size:25px}
+ .hero h1{font-size:21px}
+ .socials{grid-template-columns:repeat(2,1fr)}
+ .services{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
-<div class="container">
+<header class="container">
+ <img class="logo" src="IMG_20261115_224410.png" alt="لوگوی تابلو برق متحد">
+ <div class="brand">تابلو برق <span>متحد</span></div>
+ <div class="engineer">مهندس یعقوبی‌زاده</div>
+</header>
 
-<img class="logo" src="IMG_20261115_224410.png" alt="لوگوی تابلو برق متحد" style="object-fit:contain;padding:8px;"> 
-<div class="brand">تابلو برق متحد</div>
-<div class="english">MOTTAHED PANEL</div>
+<main class="container">
+ <section class="hero">
+  <h1>طراحی و ساخت تابلوهای برق <span>صنعتی</span></h1>
+  <p>
+   سازنده انواع تابلوهای برق فشار قوی و ضعیف،
+   تابلوهای صنعتی و سیستم‌های اتوماسیون صنعتی
+  </p>
+  <div class="panel-art">
+   <div class="cabinet">
+    <div class="rail">
+     <div class="part"></div><div class="part small"></div>
+     <div class="part"></div><div class="part small"></div>
+    </div>
+    <div class="rail">
+     <div class="part small"></div><div class="part"></div>
+     <div class="part small"></div><div class="part"></div>
+    </div>
+    <div class="rail">
+     <div class="part"></div><div class="part"></div>
+     <div class="part small"></div><div class="part"></div>
+    </div>
+   </div>
+   <div class="panel-caption">نمونه نمای شماتیک تابلو برق صنعتی</div>
+  </div>
+ </section>
 
-<div class="hero">⚡</div>
+ <h2 class="section-title">خدمات <span>ما</span></h2>
+ <section class="services">
+  <div class="service">⚡ <b>تابلو برق فشار قوی</b></div>
+  <div class="service">🔌 <b>تابلو برق فشار ضعیف</b></div>
+  <div class="service">⚙️ <b>تابلو برق صنعتی</b></div>
+  <div class="service">🛠️ <b>اتوماسیون صنعتی</b></div>
+ </section>
 
-<p class="desc">
-سازنده انواع تابلوهای برق فشار قوی و ضعیف،
-صنعتی و اتوماسیون صنعتی
-</p>
+ <section class="contact">
+  <h2 class="section-title">ارتباط با <span>ما</span></h2>
+  <div>برای مشاوره و ثبت سفارش تماس بگیرید</div>
+  <a class="phone" href="tel:09123137076">09123137076</a>
+  <div class="actions">
+   <a class="action primary" href="tel:09123137076">☎ تماس مستقیم</a>
+   <a class="action" href="sms:09123137076">✉ ارسال پیامک</a>
+   <a class="action" href="https://wa.me/989123137076">واتساپ</a>
+  </div>
+ </section>
 
-<div class="slogan">
-<span class="word"><b>م</b>هارت</span>
-<span class="word"><b>ت</b>جربه</span>
-<span class="word"><b>ح</b>رفه</span>
-<span class="word"><b>د</b>انش</span>
-</div>
-
-<h3>راه‌های ارتباطی با ما</h3>
-
-<div class="links">
-<a class="link phone" href="tel:">
-<span class="icon">☎️</span>تماس تلفنی
-</a>
-<a class="link" href="sms:">
-<span class="icon">✉️</span>ارسال پیامک
-</a>
-<a class="link whatsapp" href="#">
-<span class="icon">🟢</span>واتساپ
-</a>
-<a class="link telegram" href="#">
-<span class="icon">✈️</span>تلگرام
-</a>
-<a class="link instagram" href="#">
-<span class="icon">◎</span>اینستاگرام
-</a>
-<a class="link bale" href="#">
-<span class="icon">✓</span>بله
-</a>
-<a class="link eitaa" href="#">
-<span class="icon">✦</span>ایتا
-</a>
-<a class="link rubika" href="#">
-<span class="icon">✿</span>روبیکا
-</a>
-</div>
+ <h2 class="section-title">ما را در <span>پیام‌رسان‌ها</span> دنبال کنید</h2>
+ <section class="socials">
+  <a class="social" href="https://instagram.com/mottahed_panel" target="_blank">
+   <span class="symbol instagram">◎</span>اینستاگرام
+   <small>@mottahed_panel</small>
+  </a>
+  <a class="social" href="https://t.me/mottahed_panel" target="_blank">
+   <span class="symbol telegram">➤</span>تلگرام
+   <small>@mottahed_panel</small>
+  </a>
+  <a class="social" href="https://ble.ir/mottahed_panel" target="_blank">
+   <span class="symbol bale">✓</span>بله
+   <small>@mottahed_panel</small>
+  </a>
+  <a class="social" href="https://eitaa.com/mottahed_panel" target="_blank">
+   <span class="symbol eitaa">ا</span>ایتا
+   <small>@mottahed_panel</small>
+  </a>
+  <a class="social" href="https://rubika.ir/mottahed_panel" target="_blank">
+   <span class="symbol rubika">R</span>روبیکا
+   <small>@mottahed_panel</small>
+  </a>
+  <a class="social" href="https://wa.me/989123137076" target="_blank">
+   <span class="symbol whatsapp">☎</span>واتساپ
+   <small>09123137076</small>
+  </a>
+ </section>
+</main>
 
 <footer>
-تابلو برق متحد | مهارت، تجربه، حرفه، دانش
+© تابلو برق متحد | تمامی حقوق محفوظ است
 </footer>
-
-</div>
 </body>
 </html>
-
