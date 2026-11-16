@@ -3,199 +3,136 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#101c2d">
-<title>تابلو برق متحد | مهندس یعقوبی‌زاده</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تابلو برق متحد</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box}
-body{
- margin:0;
- font-family:Tahoma,Arial,sans-serif;
- background:#0b1422;
- color:#f4f6fa;
- line-height:1.9;
-}
-.container{width:min(940px,92%);margin:auto}
-header{text-align:center;padding:38px 15px 25px}
-.logo{
- width:125px;height:125px;object-fit:contain;
- background:#fff;border-radius:24px;padding:8px;
- box-shadow:0 0 30px #f28b2630;
-}
-.brand{font-size:30px;font-weight:bold;margin:12px 0 0}
-.brand span{color:#f59a35}
-.engineer{color:#c1ccda;font-size:15px}
-.hero{
- margin:15px auto 30px;
- padding:30px 22px;
- border:1px solid #29394d;
- border-radius:24px;
- background:linear-gradient(135deg,#17283e,#101b2b);
- text-align:center;
-}
-.hero h1{font-size:25px;margin:0 0 12px}
-.hero h1 span{color:#f59a35}
-.hero p{color:#c4cfdd;margin:0 auto;max-width:650px}
-.panel-art{
- margin:25px auto 0;
- max-width:490px;
- padding:18px;
- border-radius:18px;
- background:linear-gradient(145deg,#263b50,#111d2c);
- border:1px solid #43566b;
-}
-.cabinet{
- margin:auto;width:210px;height:175px;
- background:linear-gradient(90deg,#b9c4cc,#edf1f3,#aab6c0);
- border:7px solid #788997;border-radius:8px;
- display:flex;gap:9px;padding:12px;
- box-shadow:0 12px 25px #0006;
-}
-.rail{flex:1;background:#dce3e8;border:2px solid #788997;border-radius:3px;padding:7px 3px}
-.part{height:27px;margin:5px 0;background:#34495b;border-radius:3px;border-left:4px solid #f59a35}
-.part.small{height:17px;background:#536b7c}
-.panel-caption{font-size:13px;color:#dce5ed;margin-top:12px}
-.section-title{
- text-align:center;font-size:20px;margin:32px 0 16px;
-}
-.section-title span{color:#f59a35}
-.services{
- display:grid;grid-template-columns:repeat(2,1fr);gap:12px;
-}
-.service{
- background:#142338;border:1px solid #293c53;
- padding:15px;border-radius:14px;text-align:center;
-}
-.service b{color:#f6a34c}
-.contact{
- margin:28px 0;padding:23px;
- background:#142338;border:1px solid #293c53;
- border-radius:20px;text-align:center;
-}
-.phone{
- display:inline-block;color:#fff;text-decoration:none;
- direction:ltr;font-size:22px;font-weight:bold;
- margin:8px 0;
-}
-.actions{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:15px}
-.action{
- display:inline-block;text-decoration:none;color:white;
- background:#263b52;padding:10px 17px;border-radius:12px;
- border:1px solid #40556c;font-size:14px;
-}
-.action.primary{background:#e98727;border-color:#e98727;color:#101827;font-weight:bold}
-.socials{
- display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
-}
-.social{
- text-decoration:none;color:white;background:#142338;
- border:1px solid #293c53;border-radius:14px;
- padding:13px 5px;text-align:center;
-}
-.social .symbol{
- width:39px;height:39px;border-radius:50%;
- display:grid;place-items:center;margin:0 auto 6px;
- font-size:20px;font-weight:bold;color:white;
-}
-.whatsapp{background:#20bd68}
-.telegram{background:#269bd5}
-.instagram{background:linear-gradient(45deg,#f9a13b,#e1306c,#833ab4)}
-.bale{background:#168c55}
-.eitaa{background:#e87924}
-.rubika{background:linear-gradient(135deg,#e84c8a,#8053c7,#32a6d5)}
-.social small{display:block;color:#c4cfdd;font-size:12px}
-footer{text-align:center;color:#8798aa;font-size:12px;padding:28px 10px}
-@media(max-width:500px){
- .brand{font-size:25px}
- .hero h1{font-size:21px}
- .socials{grid-template-columns:repeat(2,1fr)}
- .services{grid-template-columns:1fr}
+body{margin:0;background:#0b1425;color:#fff;font-family:Vazirmatn,Tahoma,sans-serif;line-height:2}
+.container{width:92%;max-width:900px;margin:auto}
+header{padding:25px 0}
+.identity{display:flex;align-items:center;gap:14px}
+.identity img{width:70px;height:70px;object-fit:contain;background:white;border-radius:15px;padding:4px}
+.handle{direction:ltr;font-weight:800;font-size:20px}
+section,.hero{background:#14233c;border:1px solid #2b3c58;border-radius:20px;padding:20px;margin:18px 0}
+.hero img{width:100%;max-height:350px;object-fit:contain;border-radius:14px;background:#e9edf2}
+h1{font-size:27px;margin-bottom:0}
+h2{color:#f39a32;font-size:20px;margin-top:0}
+.tagline{color:#f39a32;font-weight:bold}
+.muted{color:#bdc8d8}
+li{margin:5px 0}
+.phones,.socials,.maps,.brands{display:grid;gap:10px}
+.phones{grid-template-columns:repeat(3,1fr)}
+.socials{grid-template-columns:repeat(2,1fr)}
+.maps,.brands{grid-template-columns:repeat(3,1fr)}
+.item{background:#1c304d;border:1px solid #344966;border-radius:17px;padding:13px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-decoration:none;min-height:85px}
+.item small{font-size:12px;color:#bdc8d8;direction:ltr}
+.item strong{font-size:15px}
+.wide{grid-column:1/-1}
+.icon{font-size:30px;line-height:1.4}
+.brand{background:#fff;color:#14233c;border-radius:15px;min-height:90px;display:flex;align-items:center;justify-content:center;padding:8px;text-align:center}
+.brand img{max-width:100%;max-height:75px;object-fit:contain}
+footer{text-align:center;color:#bdc8d8;padding:25px 10px;font-size:13px}
+footer strong{display:block;color:white;font-size:16px}
+.slogan{text-align:center;font-weight:bold;font-size:19px}
+@media(max-width:550px){
+.phones{grid-template-columns:1fr}
+.socials{grid-template-columns:1fr}
+.maps,.brands{grid-template-columns:repeat(3,1fr)}
+section,.hero{padding:15px}
 }
 </style>
 </head>
 <body>
-<header class="container">
- <img class="logo" src="IMG_20261115_224410.png" alt="لوگوی تابلو برق متحد">
- <div class="brand">تابلو برق <span>متحد</span></div>
- <div class="engineer">مهندس یعقوبی‌زاده</div>
+<div class="container">
+
+<header>
+<div class="identity">
+<img src="IMG_20261115_224410.png" alt="لوگوی متحد">
+<div class="handle">mottahed_panel</div>
+</div>
+<div class="hero">
+<img src="cabinet.jpg" alt="نمونه تابلو برق">
+<h1>تابلو برق متحد</h1>
+<div class="tagline">بیش از ۳ دهه تجربه، تخصص و اعتماد</div>
+<p class="muted">در زمینه طراحی، ساخت و مونتاژ انواع تابلوهای برق صنعتی و ساختمانی، آماده ارائه خدمات تخصصی در حوزه برق و کنترل صنعتی هستیم.</p>
+</div>
 </header>
 
-<main class="container">
- <section class="hero">
-  <h1>طراحی و ساخت تابلوهای برق <span>صنعتی</span></h1>
-  <p>
-   سازنده انواع تابلوهای برق فشار قوی و ضعیف،
-   تابلوهای صنعتی و سیستم‌های اتوماسیون صنعتی
-  </p>
-  <div class="panel-art">
-   <div class="cabinet">
-    <div class="rail">
-     <div class="part"></div><div class="part small"></div>
-     <div class="part"></div><div class="part small"></div>
-    </div>
-    <div class="rail">
-     <div class="part small"></div><div class="part"></div>
-     <div class="part small"></div><div class="part"></div>
-    </div>
-    <div class="rail">
-     <div class="part"></div><div class="part"></div>
-     <div class="part small"></div><div class="part"></div>
-    </div>
-   </div>
-   <div class="panel-caption">نمونه نمای شماتیک تابلو برق صنعتی</div>
-  </div>
- </section>
+<section>
+<h2>خدمات و محصولات ما</h2>
+<ul>
+<li>طراحی و ساخت انواع تابلوهای برق صنعتی</li>
+<li>ساخت تابلوهای فشار ضعیف و متوسط</li>
+<li>طراحی و ساخت تابلوهای بانک خازنی</li>
+<li>ساخت تابلوهای موتورخانه و استخر</li>
+<li>تابلوهای ATS، ستاره مثلث و راه‌انداز موتور</li>
+<li>تابلوهای مجهز به درایو و اینورتر</li>
+<li>ساخت تابلوهای برق ساختمانی و کارگاهی</li>
+<li>مونتاژ و تجهیز تابلوها متناسب با نیاز هر پروژه</li>
+<li>فروش انواع قطعات تابلو برق و صفحات خام تابلو در ابعاد مختلف</li>
+</ul>
+</section>
 
- <h2 class="section-title">خدمات <span>ما</span></h2>
- <section class="services">
-  <div class="service">⚡ <b>تابلو برق فشار قوی</b></div>
-  <div class="service">🔌 <b>تابلو برق فشار ضعیف</b></div>
-  <div class="service">⚙️ <b>تابلو برق صنعتی</b></div>
-  <div class="service">🛠️ <b>اتوماسیون صنعتی</b></div>
- </section>
+<section>
+<h2>ارتباط با ما</h2>
+<p class="muted">جهت دریافت مشاوره، راهنمایی و ثبت سفارش با ما در ارتباط باشید.</p>
+<div class="phones">
+<a class="item" href="tel:02133952842">تلفن فروشگاه<strong dir="ltr">021-33952842</strong></a>
+<a class="item" href="tel:02133918367">تلفن فروشگاه<strong dir="ltr">021-33918367</strong></a>
+<a class="item" href="tel:09123137076">همراه<strong dir="ltr">09123137076</strong></a>
+</div>
+</section>
 
- <section class="contact">
-  <h2 class="section-title">ارتباط با <span>ما</span></h2>
-  <div>برای مشاوره و ثبت سفارش تماس بگیرید</div>
-  <a class="phone" href="tel:09123137076">09123137076</a>
-  <div class="actions">
-   <a class="action primary" href="tel:09123137076">☎ تماس مستقیم</a>
-   <a class="action" href="sms:09123137076">✉ ارسال پیامک</a>
-   <a class="action" href="https://wa.me/989123137076">واتساپ</a>
-  </div>
- </section>
+<section>
+<h2>شبکه‌های ارتباطی</h2>
+<div class="socials">
+<a class="item" href="https://t.me/mottahed_panel" target="_blank"><span class="icon">➤</span><strong>تلگرام</strong><small>@mottahed_panel</small></a>
+<a class="item" href="https://wa.me/989123137076" target="_blank"><span class="icon">◉</span><strong>واتساپ</strong><small>09123137076</small></a>
+<a class="item wide" href="https://instagram.com/mottahed_panel" target="_blank"><span class="icon">◎</span><strong>اینستاگرام</strong><small>@mottahed_panel</small></a>
+</div>
+</section>
 
- <h2 class="section-title">ما را در <span>پیام‌رسان‌ها</span> دنبال کنید</h2>
- <section class="socials">
-  <a class="social" href="https://instagram.com/mottahed_panel" target="_blank">
-   <span class="symbol instagram">◎</span>اینستاگرام
-   <small>@mottahed_panel</small>
-  </a>
-  <a class="social" href="https://t.me/mottahed_panel" target="_blank">
-   <span class="symbol telegram">➤</span>تلگرام
-   <small>@mottahed_panel</small>
-  </a>
-  <a class="social" href="https://ble.ir/mottahed_panel" target="_blank">
-   <span class="symbol bale">✓</span>بله
-   <small>@mottahed_panel</small>
-  </a>
-  <a class="social" href="https://eitaa.com/mottahed_panel" target="_blank">
-   <span class="symbol eitaa">ا</span>ایتا
-   <small>@mottahed_panel</small>
-  </a>
-  <a class="social" href="https://rubika.ir/mottahed_panel" target="_blank">
-   <span class="symbol rubika">R</span>روبیکا
-   <small>@mottahed_panel</small>
-  </a>
-  <a class="social" href="https://wa.me/989123137076" target="_blank">
-   <span class="symbol whatsapp">☎</span>واتساپ
-   <small>09123137076</small>
-  </a>
- </section>
-</main>
+<section>
+<h2>اپلیکیشن‌های داخلی</h2>
+<div class="socials">
+<a class="item" href="https://ble.ir/mottahed_panel" target="_blank"><span class="icon">✓</span><strong>بله</strong><small>@mottahed_panel</small></a>
+<a class="item" href="https://rubika.ir/mottahed_panel" target="_blank"><span class="icon">✿</span><strong>روبیکا</strong><small>@mottahed_panel</small></a>
+</div>
+</section>
+
+<section>
+<h2>آدرس و موقعیت مکانی</h2>
+<p>تهران، لاله‌زار جنوبی، پاساژ گراند هتل، پلاک ۲۶</p>
+<div class="maps">
+<a class="item" href="https://neshan.org/maps/search/پاساژ%20گراند%20هتل%20لاله%20زار%20تهران" target="_blank"><span class="icon">📍</span><strong>نشان</strong></a>
+<a class="item" href="https://balad.ir/search/پاساژ%20گراند%20هتل%20لاله%20زار%20تهران" target="_blank"><span class="icon">🧭</span><strong>بلد</strong></a>
+<a class="item" href="https://www.google.com/maps/search/?api=1&query=پاساژ+گراند+هتل+لاله+زار+جنوبی+تهران" target="_blank"><span class="icon">🌐</span><strong>Google Maps</strong></a>
+</div>
+</section>
+
+<section>
+<h2>مونتاژ و فروش برندهای معتبر</h2>
+<div class="brands">
+<div class="brand">اشنایدر</div>
+<div class="brand">اتونیکس</div>
+<div class="brand">پارس فانال</div>
+<div class="brand">رعد</div>
+<div class="brand">شیوا امواج</div>
+<div class="brand">لینکو</div>
+</div>
+</section>
+
+<section class="slogan">
+<div class="tagline">شعار ما</div>
+مهارت | تجربه | حرفه | دانش
+</section>
 
 <footer>
-© تابلو برق متحد | تمامی حقوق محفوظ است
+کلیه حقوق مادی و معنوی این وب‌سایت محفوظ است.
+<strong>مهندس یعقوبی</strong>
 </footer>
+
+</div>
 </body>
 </html>
