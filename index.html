@@ -6,118 +6,147 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>تابلو برق متحد | طراحی و ساخت تابلو برق</title>
 <meta name="description" content="طراحی، ساخت و مونتاژ انواع تابلو برق صنعتی و ساختمانی">
-<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap');
+
 *{box-sizing:border-box}
 body{
- margin:0;
- background:#0b1425;
- color:#fff;
- font-family:'Vazirmatn',Tahoma,sans-serif;
- line-height:1.9;
+  margin:0;
+  font-family:'Vazirmatn',Tahoma,sans-serif;
+  background:#0b1425;
+  color:#fff;
+  line-height:1.9;
 }
-.container{width:92%;max-width:1050px;margin:auto}
- header{
-  text-align:center;
-  padding:28px 0 15px;
-}
-header img{
-  width:150px;
-  height:150px;
+.container{width:92%;max-width:1100px;margin:auto}
+header{text-align:center;padding:30px 0 20px}
+.main-logo{
+  width:190px;height:190px;
   object-fit:contain;
-  border-radius:50%;
-  background:#fff;
-  padding:8px;
+  display:block;
+  margin:0 auto 12px;
 }
-h1{font-size:27px;margin:10px 0 0}
-.tagline{color:#f39a32;font-size:15px;margin:2px 0}
+h1{font-size:30px;margin:5px 0;color:#fff}
+.tagline{color:#f39a32;font-size:17px;font-weight:700}
 .hero{
- margin:20px auto 25px;
- border-radius:20px;overflow:hidden;
- border:1px solid #34435c;
+  margin:20px auto 35px;
+  text-align:center;
 }
-.hero img{width:100%;display:block;max-height:460px;object-fit:cover}
+.hero img{
+  width:100%;max-height:430px;
+  object-fit:contain;
+  border-radius:18px;
+  background:#fff;
+}
 section{
- background:#14233c;
- border:1px solid #263954;
- border-radius:20px;
- padding:22px;
- margin:18px 0;
+  background:#14233c;
+  padding:25px;
+  border-radius:18px;
+  margin:22px 0;
+  border:1px solid #263b59;
 }
 h2{
- color:#f39a32;
- font-size:21px;
- margin:0 0 12px;
- text-align:center;
+  color:#f39a32;
+  font-size:22px;
+  margin:0 0 15px;
+  text-align:center;
 }
-p{margin:5px 0}
-.description{text-align:center;color:#e1e7f0}
-.services{padding-right:22px;margin:10px 0 0}
-.services li{padding:3px 0;color:#e7edf6}
-.contact-intro{text-align:center;color:#d7dfeb;margin-bottom:15px}
+p{margin:8px 0}
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:12px;
+}
+.service{
+  background:#0b1425;
+  padding:12px 15px;
+  border-radius:12px;
+  border-right:3px solid #f39a32;
+}
+.brands{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.brand{
+  height:105px;
+  background:#000;
+  border-radius:25px;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:10px;
+}
+.brand img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+}
 .contact-grid{
- display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
 }
 .contact-card{
- background:#0b1425;border:1px solid #34435c;
- border-radius:18px;padding:14px;text-align:center;
+  background:#0b1425;
+  padding:16px;
+  border-radius:14px;
+  text-align:center;
 }
-.contact-card strong{display:block;color:#f39a32;margin-bottom:5px}
-.contact-card a{color:#fff;text-decoration:none;display:block;direction:ltr}
-.social-grid{
- display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px
+.contact-card a{
+  color:#fff;
+  text-decoration:none;
+  display:block;
+  font-size:18px;
+  direction:ltr;
 }
-.social-card{
- display:flex;align-items:center;justify-content:center;gap:12px;
- background:#080808;border:1px solid #35445c;
- border-radius:18px;padding:13px;color:#fff;
- text-decoration:none;min-height:88px;
+.socials,.maps{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(0,1fr));
+  gap:12px;
+  margin-top:18px;
 }
-.social-card img{width:48px;height:48px;object-fit:contain}
-.social-card strong{display:block;font-size:15px}
-.social-card small{display:block;color:#c8d0dc;direction:ltr;font-size:12px}
-.social-card.instagram{grid-column:1/-1}
-.internal-title{text-align:center;color:#f39a32;margin:20px 0 12px}
-.map-grid{
- display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px
+.social,.map{
+  background:#000;
+  border-radius:15px;
+  padding:10px;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  min-width:0;
 }
-.map-card{
- display:flex;flex-direction:column;align-items:center;justify-content:center;
- gap:7px;background:#080808;border:1px solid #34435c;
- border-radius:18px;padding:13px 5px;color:#fff;
- text-decoration:none;min-height:110px;
+.social img{
+  width:58px;
+  height:58px;
+  object-fit:contain;
+  display:block;
 }
-.map-card img{width:52px;height:52px;object-fit:contain}
-.map-card span{font-size:13px}
-.address{text-align:center;color:#e1e7f0;margin-top:14px}
-.brand-grid{
- display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px
+.social.whatsapp img{width:76px;height:76px}
+.map img{
+  width:65px;
+  height:65px;
+  object-fit:contain;
 }
-.brand-card{
- height:105px;background:#000;border:1px solid #34435c;
- border-radius:28px;display:flex;align-items:center;
- justify-content:center;padding:12px;overflow:hidden;
+.address{text-align:center;margin-top:12px}
+footer{
+  text-align:center;
+  padding:25px 10px;
+  color:#b9c5d8;
+  font-size:14px;
 }
-.brand-card img{
- width:100%;height:100%;object-fit:contain;
-}
-.slogan{text-align:center}
-.slogan .phrase{
- color:#f39a32;font-size:21px;font-weight:800;
- letter-spacing:1px;
-}
-footer{text-align:center;padding:20px 10px 30px;color:#aebbd0;font-size:13px}
-footer strong{display:block;color:#f39a32;font-size:16px;margin-top:5px}
-@media(max-width:520px){
- h1{font-size:23px}
- section{padding:17px}
- .brand-grid{gap:9px}
- .brand-card{height:85px;border-radius:23px;padding:8px}
- .social-card{gap:8px;padding:10px}
- .social-card img{width:40px;height:40px}
- .map-card img{width:45px;height:45px}
- .contact-grid{gap:9px}
+a{transition:opacity .2s}
+a:hover{opacity:.75}
+@media(max-width:600px){
+  .brands{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .socials{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .maps{grid-template-columns:repeat(3,minmax(0,1fr))}
+  h1{font-size:25px}
+  section{padding:18px}
 }
 </style>
 </head>
@@ -126,142 +155,117 @@ footer strong{display:block;color:#f39a32;font-size:16px;margin-top:5px}
 <div class="container">
 
 <header>
- <img class="main-logo" src="IMG_20261115_224410.png" alt="لوگوی تابلو برق متحد">
- <h1>تابلو برق متحد</h1>
- <div class="tagline">بیش از ۳ دهه تجربه، تخصص و اعتماد</div>
+  <img class="main-logo" src="main-logo.jpg" alt="لوگوی تابلو برق متحد">
+  <h1>تابلو برق متحد</h1>
+  <div class="tagline">بیش از ۳ دهه تجربه، تخصص و اعتماد</div>
 </header>
 
-<!-- تصویر تابلو برق در ابتدای سایت -->
 <div class="hero">
- <img src="1000023639(1).png" alt="نمونه تابلو برق صنعتی مدرن">
+  <img src="1000023639(1).png" alt="نمونه تابلو برق صنعتی">
 </div>
 
 <section>
- <h2>درباره ما</h2>
- <p class="description">
- در زمینه طراحی، ساخت و مونتاژ انواع تابلوهای برق صنعتی و ساختمانی،
- آماده ارائه خدمات تخصصی در حوزه برق و کنترل صنعتی هستیم.
- </p>
+  <h2>درباره تابلو برق متحد</h2>
+  <p>
+    در زمینه طراحی، ساخت و مونتاژ انواع تابلوهای برق صنعتی و ساختمانی،
+    آماده ارائه خدمات تخصصی در حوزه برق و کنترل صنعتی هستیم.
+  </p>
 </section>
 
 <section>
- <h2>خدمات ما</h2>
- <ul class="services">
-  <li>طراحی و ساخت انواع تابلوهای برق صنعتی</li>
-  <li>ساخت تابلوهای فشار ضعیف و متوسط</li>
-  <li>طراحی و ساخت تابلوهای بانک خازنی</li>
-  <li>ساخت تابلوهای موتورخانه و استخر</li>
-  <li>تابلوهای ATS، ستاره مثلث و راه‌انداز موتور</li>
-  <li>تابلوهای مجهز به درایو و اینورتر</li>
-  <li>ساخت تابلوهای برق ساختمانی و کارگاهی</li>
-  <li>مونتاژ و تجهیز تابلوها متناسب با نیاز هر پروژه</li>
-  <li>فروش انواع قطعات تابلو برق و صفحات خام تابلو در ابعاد مختلف</li>
- </ul>
-</section>
-
-<section>
- <h2>ارتباط با ما</h2>
- <p class="contact-intro">
- جهت دریافت مشاوره، راهنمایی و ثبت سفارش با ما در ارتباط باشید.
- </p>
-
- <div class="contact-grid">
-  <div class="contact-card">
-   <strong>تلفن فروشگاه</strong>
-   <a href="tel:02133952842">021-33952842</a>
-   <a href="tel:02133918367">021-33918367</a>
+  <h2>خدمات ما</h2>
+  <div class="services">
+    <div class="service">طراحی و ساخت انواع تابلوهای برق صنعتی</div>
+    <div class="service">ساخت تابلوهای فشار ضعیف و متوسط</div>
+    <div class="service">طراحی و ساخت تابلوهای بانک خازنی</div>
+    <div class="service">ساخت تابلوهای موتورخانه و استخر</div>
+    <div class="service">تابلوهای ATS، ستاره مثلث و راه‌انداز موتور</div>
+    <div class="service">تابلوهای مجهز به درایو و اینورتر</div>
+    <div class="service">ساخت تابلوهای برق ساختمانی و کارگاهی</div>
+    <div class="service">مونتاژ و تجهیز تابلوها متناسب با نیاز هر پروژه</div>
+    <div class="service">فروش انواع قطعات تابلو برق و صفحات خام تابلو در ابعاد مختلف</div>
   </div>
-  <div class="contact-card">
-   <strong>شماره همراه</strong>
-   <a href="tel:09123137076">09123137076</a>
+</section>
+
+<section>
+  <h2>مونتاژ و فروش برندهای معتبر</h2>
+  <div class="brands">
+    <div class="brand"><img src="Eshnayder.png" alt="Schneider"></div>
+    <div class="brand"><img src="Autonics.png" alt="Autonics"></div>
+    <div class="brand"><img src="Parsfan.png" alt="Pars Fanal"></div>
+    <div class="brand"><img src="Raad.png" alt="Raad"></div>
+    <div class="brand"><img src="Linko.png" alt="Linco"></div>
+    <div class="brand"><img src="Shiva.png" alt="Shiva Amvaj"></div>
   </div>
- </div>
 </section>
 
 <section>
- <h2>شبکه‌های ارتباطی</h2>
- <div class="social-grid">
+  <h2>ارتباط با ما</h2>
+  <p style="text-align:center">
+    جهت دریافت مشاوره، راهنمایی و ثبت سفارش با ما در ارتباط باشید.
+  </p>
 
-  <a class="social-card" href="https://wa.me/989123137076" target="_blank">
-   <img src="whatsapp-logo.jpg" alt="واتساپ">
-   <span><strong>واتساپ</strong><small>09123137076</small></span>
-  </a>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <strong>تلفن فروشگاه</strong>
+      <a href="tel:02133952842">021-33952842</a>
+      <a href="tel:02133918367">021-33918367</a>
+    </div>
+    <div class="contact-card">
+      <strong>شماره همراه</strong>
+      <a href="tel:09123137076">09123137076</a>
+    </div>
+  </div>
 
-  <a class="social-card" href="https://t.me/mottahed_panel" target="_blank">
-   <img src="telegram-logo-black.jpg" alt="تلگرام">
-   <span><strong>تلگرام</strong><small>@mottahed_panel</small></span>
-  </a>
-
-  <a class="social-card instagram" href="https://instagram.com/mottahed_panel" target="_blank">
-   <img src="Instagram.png" alt="اینستاگرام">
-   <span><strong>اینستاگرام</strong><small>@mottahed_panel</small></span>
-  </a>
-
- </div>
-
- <div class="internal-title">اپلیکیشن‌های داخلی</div>
- <div class="social-grid">
-
-  <a class="social-card" href="https://ble.ir/mottahed_panel" target="_blank">
-   <img src="Bale.png" alt="بله">
-   <span><strong>بله</strong><small>@mottahed_panel</small></span>
-  </a>
-
-  <a class="social-card" href="https://rubika.ir/mottahed_panel" target="_blank">
-   <img src="Robika.png" alt="روبیکا">
-   <span><strong>روبیکا</strong><small>@mottahed_panel</small></span>
-  </a>
-
- </div>
+  <div class="socials">
+    <a class="social" href="https://ble.ir/mottahed_panel" target="_blank">
+      <img src="Bale.png" alt="بله">
+      <span>بله</span>
+    </a>
+    <a class="social" href="https://rubika.ir/mottahed_panel" target="_blank">
+      <img src="Robika.png" alt="روبیکا">
+      <span>روبیکا</span>
+    </a>
+    <a class="social whatsapp" href="https://wa.me/989123137076" target="_blank">
+      <img src="whatsapp-logo.jpg" alt="واتساپ">
+      <span>واتساپ</span>
+    </a>
+    <a class="social" href="https://instagram.com/mottahed_panel" target="_blank">
+      <img src="Instagram.png" alt="اینستاگرام">
+      <span>اینستاگرام</span>
+    </a>
+    <a class="social" href="https://t.me/mottahed_panel" target="_blank">
+      <img src="telegram-logo-black.jpg" alt="تلگرام">
+      <span>تلگرام</span>
+    </a>
+  </div>
 </section>
 
 <section>
- <h2>آدرس و موقعیت مکانی</h2>
- <div class="map-grid">
-
-  <a class="map-card" href="https://neshan.org/maps/search/35.68981753774264,51.42190613218455" target="_blank">
-   <img src="Neshan.png" alt="نشان">
-   <span>نشان</span>
-  </a>
-
-  <a class="map-card" href="https://balad.ir/p/3RgQUhdT8Uev8B" target="_blank">
-   <img src="Balad.png" alt="بلد">
-   <span>بلد</span>
-  </a>
-
-  <a class="map-card" href="https://maps.app.goo.gl/esx2Jf55DoD8vBb58" target="_blank">
-   <img src="Map.png" alt="گوگل مپ">
-   <span>گوگل مپ</span>
-  </a>
-
- </div>
-
- <p class="address">
- تهران، لاله‌زار جنوبی، پاساژ گراند هتل، پلاک ۲۶
- </p>
-</section>
-
-<section>
- <h2>مونتاژ و فروش برندهای معتبر</h2>
-
- <div class="brand-grid">
-  <div class="brand-card"><img src="Eshnayder.png" alt="اشنایدر"></div>
-  <div class="brand-card"><img src="Autonics.png" alt="اتونیکس"></div>
-  <div class="brand-card"><img src="Parsfan al.png" alt="پارس فانال"></div>
-  <div class="brand-card"><img src="Raad.png" alt="رعد"></div>
-  <div class="brand-card"><img src="Shiva amvaj.png" alt="شیوا امواج"></div>
-  <div class="brand-card"><img src="Linko.png" alt="لینکو"></div>
- </div>
-</section>
-
-<section class="slogan">
- <h2>شعار ما</h2>
- <div class="phrase">مهارت | تجربه | حرفه | دانش</div>
+  <h2>آدرس و موقعیت مکانی</h2>
+  <p class="address">
+    تهران، لاله‌زار جنوبی، پاساژ گرند هتل، پلاک ۲۶
+  </p>
+  <div class="maps">
+    <a class="map" href="https://nshn.ir/707bvEwfIxi-yw" target="_blank">
+      <img src="Neshan.png" alt="نشان">
+      <span>نشان</span>
+    </a>
+    <a class="map" href="https://balad.ir/p/3RgQUhdT8Uev8B" target="_blank">
+      <img src="Balad.png" alt="بلد">
+      <span>بلد</span>
+    </a>
+    <a class="map" href="https://www.google.com/maps/search/?api=1&query=35.68981753774264%2C51.42190613218455" target="_blank">
+      <img src="Map.png" alt="گوگل مپ">
+      <span>گوگل مپ</span>
+    </a>
+  </div>
 </section>
 
 <footer>
- کلیه حقوق مادی و معنوی این وب‌سایت محفوظ است.
- <strong>مهندس یعقوبی</strong>
+  <div>تابلو برق متحد</div>
+  <div>مهندس یعقوبی</div>
+  <div>بیش از ۳ دهه تجربه، تخصص و اعتماد</div>
 </footer>
 
 </div>
